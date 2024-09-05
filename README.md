@@ -10,7 +10,7 @@
 
 - 📫 How to reach me **alialjawad2k1@gmail.com**
 
-- 📄 Know about my experiences [Ali-Aljawad-CV](https://docs.google.com/document/d/13ESHAd_SvP0yOlJeWJRBQ0vupvhAo9k7xwyLdPFaVd4/edit?usp=sharing)
+- 📄 Know about my experiences [Ali-Aljawad-CV](https://docs.google.com/document/d/1CYqxwTHFCvbFWA-jLX2nOEOstl5zbtHH/edit?usp=sharing&ouid=113671419507753801897&rtpof=true&sd=true)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
