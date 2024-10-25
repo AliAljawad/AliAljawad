@@ -4,8 +4,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=alialjawad&label=Profile%20views&color=0e75b6&style=flat" alt="alialjawad" /> </p>
 
-- 🔭 I’m currently working on **my SE Factory Final Project**
-
 - 🌱 I’m currently learning **Laravel,ReactJs**
 
 - 📫 How to reach me **alialjawad2k1@gmail.com**
