@@ -10,6 +10,8 @@
 
 - 📄 Know about my experiences [Ali-Aljawad-CV](https://docs.google.com/document/d/1CYqxwTHFCvbFWA-jLX2nOEOstl5zbtHH/edit?usp=sharing&ouid=113671419507753801897&rtpof=true&sd=true)
 
+- 💼 [My Portofolio](https://ali-aljawad.netlify.app)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/ali-aljawad-4a212718a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ali-aljawad-4a212718a" height="30" width="40" /></a>
