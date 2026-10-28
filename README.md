@@ -17,10 +17,11 @@
 
 <br>
 
+<!-- Icon lists use %2C instead of commas: GitHub splits srcset URLs at commas. -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs,ts,react,nodejs,js,html,css,laravel,php,mysql,mongodb,python,cs,dotnet,java,aws,linux,git,postman,figma,arduino&perline=7&theme=dark">
-    <img alt="Next.js, TypeScript, React, Node.js, JavaScript, HTML, CSS, Laravel, PHP, MySQL, MongoDB, Python, C#, .NET, Java, AWS, Linux, Git, Postman, Figma, Arduino" src="https://skillicons.dev/icons?i=nextjs,ts,react,nodejs,js,html,css,laravel,php,mysql,mongodb,python,cs,dotnet,java,aws,linux,git,postman,figma,arduino&perline=7&theme=light">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs%2Cts%2Creact%2Cnodejs%2Cjs%2Chtml%2Ccss%2Claravel%2Cphp%2Cmysql%2Cmongodb%2Cpython%2Ccs%2Cdotnet%2Cjava%2Caws%2Clinux%2Cgit%2Cpostman%2Cfigma%2Carduino&perline=7&theme=dark">
+    <img alt="Next.js, TypeScript, React, Node.js, JavaScript, HTML, CSS, Laravel, PHP, MySQL, MongoDB, Python, C#, .NET, Java, AWS, Linux, Git, Postman, Figma, Arduino" src="https://skillicons.dev/icons?i=nextjs%2Cts%2Creact%2Cnodejs%2Cjs%2Chtml%2Ccss%2Claravel%2Cphp%2Cmysql%2Cmongodb%2Cpython%2Ccs%2Cdotnet%2Cjava%2Caws%2Clinux%2Cgit%2Cpostman%2Cfigma%2Carduino&perline=7&theme=light">
   </picture>
 </p>
 
