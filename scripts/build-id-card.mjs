@@ -15,9 +15,8 @@ const CARD = {
   signature: 'Ali Aljawad',
   issuer: 'Republic of Open Source',
   title: 'Developer Identity Card',
-  // Machine-readable zone: a 3-letter issuing code and a 7-character optional field.
-  mrzState: 'OSS',
-  mrzOptional: 'FULLSTK',
+  // Short form of the stack for the code lines at the bottom of the card.
+  stackCode: 'NextJS TS',
   // Part of the 400x400 avatar shown in the photo frame, in source pixels.
   photoCrop: { centerX: 185, top: 0, width: 260 },
 };
@@ -183,13 +182,7 @@ async function fetchPublic(login) {
 }
 
 // ---------------------------------------------------------------------------
-// Machine-readable zone (ICAO 9303 TD2: two lines of 36 characters)
-
-function checkDigit(field) {
-  const weights = [7, 3, 1];
-  const value = (c) => (c === '<' ? 0 : c <= '9' ? Number(c) : c.charCodeAt(0) - 55);
-  return String([...field].reduce((sum, c, i) => sum + value(c) * weights[i % 3], 0) % 10);
-}
+// Code lines: styled after a passport's machine-readable zone, but written to read in order.
 
 function mrzText(s) {
   return s
@@ -201,17 +194,12 @@ function mrzText(s) {
 
 const pad = (s, n) => s.padEnd(n, '<').slice(0, n);
 
-function mrz({ id, createdAt }) {
-  const line1 = `I<${CARD.mrzState}${pad(`${mrzText(CARD.surname)}<<${mrzText(CARD.givenNames)}`, 31)}`;
-  const docNo = pad(String(id), 9);
-  const joined = createdAt.slice(2, 10).replace(/-/g, ''); // YYMMDD, in the date-of-birth slot
-  const expiry = '<<<<<<';
-  const optional = pad(mrzText(CARD.mrzOptional), 7);
-  const docPart = docNo + checkDigit(docNo);
-  const datePart = joined + checkDigit(joined);
-  const expiryPart = expiry + checkDigit(expiry) + optional;
-  const composite = checkDigit(docPart + datePart + expiryPart);
-  return [line1, `${docPart}${CARD.mrzState}${datePart}<${expiryPart}${composite}`];
+// Name and role on the first line; ID, employer and stack on the second.
+function mrz({ id }) {
+  return [
+    pad(`${mrzText(CARD.givenNames)}<${mrzText(CARD.surname)}<<${mrzText(CARD.role)}`, 36),
+    pad(`ID<${id}<<${mrzText(CARD.employer)}<<${mrzText(CARD.stackCode)}`, 36),
+  ];
 }
 
 // ---------------------------------------------------------------------------
